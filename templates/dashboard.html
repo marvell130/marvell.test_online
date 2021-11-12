@@ -1,0 +1,27 @@
+{% include 'header.html' %}
+
+<body id="page-top">
+
+{% include 'navbar.html' %}
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                         <h1 class="h5 mb-0 text-gray-800" align="center">Welcome, {{ name }}</h1>
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                         <h1 class="h5 mb-0 text-gray-800" align="center">Selamat ! Sukses login.</h1>
+                     </div>
+                    <!-- Content Row -->
+
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <a class="h7" href="{{ url_for( 'logout' )}}">Logout</a>
+                    </div>
+
+                    <div class="row"></div>
+</body>
+
+{% include 'footer.html' %}
